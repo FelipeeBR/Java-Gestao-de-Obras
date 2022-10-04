@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SGO.jnlp">
+  <information>
+    <title>SGO</title>
+    <vendor>felip</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SGO.jar" size="338268" download="eager" />
+    <jar href="lib\bcprov-jdk15on-1.49.jar" size="2476362" download="eager" />
+    <jar href="lib\commons-beanutils-1.9.4.jar" size="246918" download="eager" />
+    <jar href="lib\commons-collections4-4.4.jar" size="751914" download="eager" />
+    <jar href="lib\commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\itextpdf-5.4.0.jar" size="1889485" download="eager" />
+    <jar href="lib\jasperreports-6.16.0.jar" size="5606029" download="eager" />
+    <jar href="lib\javax.persistence-2.2.1.jar" size="203426" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.29.jar" size="2519547" download="eager" />
+    <jar href="lib\org.eclipse.persistence.antlr-2.7.7.jar" size="147580" download="eager" />
+    <jar href="lib\org.eclipse.persistence.asm-2.7.7.jar" size="487709" download="eager" />
+    <jar href="lib\org.eclipse.persistence.core-2.7.7.jar" size="5188750" download="eager" />
+    <jar href="lib\org.eclipse.persistence.jpa-2.7.7.jar" size="1409185" download="eager" />
+    <jar href="lib\org.eclipse.persistence.jpa.jpql-2.7.7.jar" size="1332996" download="eager" />
+    <jar href="lib\org.eclipse.persistence.moxy-2.7.7.jar" size="621183" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.sgo.main.SGO"  name="SGO" />
+  <update check="always"/>
+</jnlp>

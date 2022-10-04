@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="773.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.sgo.controller.FormUsuarioController">
+   <children>
+      <Pane prefHeight="487.0" prefWidth="263.0" style="-fx-background-color: #017def;">
+         <children>
+            <VBox layoutX="26.0" layoutY="81.0" prefHeight="109.0" prefWidth="211.0">
+               <children>
+                  <TextField fx:id="txtID" editable="false" promptText="ID Usuário">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtLogin" promptText="Login">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtSenha" promptText="Senha">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <FontAwesomeIconView fill="WHITE" glyphName="LOCK" layoutX="12.0" layoutY="99.0" size="15" />
+            <Text fill="WHITE" layoutX="58.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adicionar/Alterar Usuário do Sistema" wrappingWidth="142.13671875">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <TableView fx:id="tblUsuario" layoutX="322.0" layoutY="53.0" prefHeight="288.0" prefWidth="388.0">
+        <columns>
+          <TableColumn fx:id="columnID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="columnLogin" prefWidth="155.0" text="Login" />
+            <TableColumn fx:id="columnSenha" prefWidth="157.0" text="Senha" />
+        </columns>
+      </TableView>
+      <HBox layoutX="355.0" layoutY="354.0" prefHeight="51.0" prefWidth="322.0">
+         <children>
+            <Button fx:id="btnSalvar" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #5cb85c;" text="SALVAR" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER_PLUS" size="18" />
+               </graphic>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnEditar" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #5bc0de;" text="ALTERAR" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PENCIL" size="18" />
+               </graphic>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnApagar" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #d53401;" text="APAGAR" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView glyphName="TRASH" size="18" />
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

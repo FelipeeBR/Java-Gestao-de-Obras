@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sgo.controller.FormLoginController">
+   <left>
+      <AnchorPane prefHeight="424.0" prefWidth="350.0" style="-fx-background-color: #008181;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="BUILDING" layoutX="143.0" layoutY="187.0" size="75" />
+            <Text fill="#fcfcfc" layoutX="102.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestão de Obras">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="370.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtnome" layoutX="101.0" layoutY="191.0" promptText="Usuário" style="-fx-background-color: transparent; -fx-border-color: #008181; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="txtsenha" layoutX="101.0" layoutY="241.0" promptText="Senha" style="-fx-background-color: transparent; -fx-border-color: #008181; -fx-border-width: 0px 0px 2px 0px;" />
+            <FontAwesomeIconView fill="#008181" glyphName="USER" layoutX="71.0" layoutY="216.0" size="20" />
+            <FontAwesomeIconView fill="#008181" glyphName="LOCK" layoutX="72.0" layoutY="267.0" size="20" />
+            <Button fx:id="btnlogin" layoutX="132.0" layoutY="298.0" mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: #008181;" text="Entrar" textFill="WHITE" />
+            <FontAwesomeIconView fill="#008181" glyphName="USERS" layoutX="159.0" layoutY="112.0" size="35" />
+            <Text fill="#008181" layoutX="151.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Label fx:id="txtErro" layoutX="64.0" layoutY="354.0" prefHeight="17.0" prefWidth="222.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

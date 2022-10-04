@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Material" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0c20873d-9dd1-46a6-bc85-028e7613d136">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[c2lzdGVtYS5tYXRlcmlhbCBBUyAsOTQsOTYsMGFlNmU4ZDEtNWM5NC00OWYxLTk2NWQtMGE4M2Jl
+YzdjMGY3Ow==]]>
+	</property>
+	<queryString>
+		<![CDATA[SELECT `idServico`,
+	`nomeMaterial`,
+	`nomeObra`,
+	quantidade
+FROM sistema.material]]>
+	</queryString>
+	<field name="idServico" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idServico"/>
+		<property name="com.jaspersoft.studio.field.label" value="idServico"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="material"/>
+	</field>
+	<field name="nomeMaterial" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nomeMaterial"/>
+		<property name="com.jaspersoft.studio.field.label" value="nomeMaterial"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="material"/>
+	</field>
+	<field name="nomeObra" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nomeObra"/>
+		<property name="com.jaspersoft.studio.field.label" value="nomeObra"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="material"/>
+	</field>
+	<field name="quantidade" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="quantidade"/>
+		<property name="com.jaspersoft.studio.field.label" value="quantidade"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="material"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="349" height="26" uuid="fde3a836-c4d3-4c52-8458-ad9f0952ef36"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RELAÇÃO DE MATERIAIS DE CONSTRUÇÃO]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="29" width="555" height="1" uuid="bee664ff-6bec-469f-8db7-f4abcc01be10"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="17" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="74" height="14" uuid="dd1bd1e7-a540-483d-87c9-a3145fd17d92"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Serviço/Obra:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="16" width="555" height="1" uuid="de82ba5a-1491-43f7-97eb-d4dd962a3ff2"/>
+			</line>
+			<textField>
+				<reportElement x="74" y="1" width="206" height="14" uuid="5411a4fe-d6b1-4336-bdb9-f776cde0b2b7"/>
+				<textFieldExpression><![CDATA[$F{nomeObra}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="392" y="-18" width="160" height="16" uuid="1a76bbf9-d236-4a6a-a02f-012a2059842a"/>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Impresso em: "+ new java.text.SimpleDateFormat("dd/MM/yyyy").format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="10" width="50" height="20" uuid="e128a317-b530-4aa3-aa8b-7850390e8c9d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d988bcd1-fd53-469f-a141-a22275089ef5"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Material]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="10" width="70" height="20" uuid="fe0d7953-4f3a-46c3-9ded-11a0a3e96f08">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="08de2fb4-ce86-4e98-a56e-39284adbe8f5"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantidade]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="29" width="555" height="1" uuid="a59fcb32-87dc-4321-b1cd-56d46b64e9b1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="209" y="0" width="70" height="20" uuid="d5eaf1c9-2a9c-4881-b519-ca46397867c0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="08de2fb4-ce86-4e98-a56e-39284adbe8f5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{quantidade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="180" height="20" uuid="a6289b18-eae1-4662-a1fe-c48cc817392f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d988bcd1-fd53-469f-a141-a22275089ef5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nomeMaterial}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="233" y="8" width="100" height="30" uuid="c979667b-40e1-45a0-b1e2-d24117d9af21"/>
+				<textFieldExpression><![CDATA["Pagina " +$V{PAGE_NUMBER} +" de " +$V{PAGE_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
