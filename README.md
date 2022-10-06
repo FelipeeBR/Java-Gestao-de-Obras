@@ -2,7 +2,7 @@
 
 Trabalho final da Disciplina Desenvolvimento de Sistemas Corporativos
 
-Alunos: Felipe Mendes, Warley Castro.
+Alunos: Felipe Mendes, Warley Castro, Vinicius Matias.
 
 Sistema de controle de Obras.<br>
 Funcionalidades:
